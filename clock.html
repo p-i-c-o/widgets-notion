@@ -11,8 +11,8 @@
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: Trebuchet;
+    padding-left: 20px;
   }
   .clock {
     font-size: 4rem;
@@ -25,7 +25,7 @@
 <script>
   function updateClock() {
     const now = new Date();
-    const options = { timeZone: 'Europe/Zurich', hour12: false, hour: 
+    const options = { timeZone: 'Europe/Zurich', hour12: false, hour:
 '2-digit', minute: '2-digit', second: '2-digit' };
     const timeString = now.toLocaleTimeString('en-US', options);
     document.getElementById('clock').textContent = timeString;
@@ -36,4 +36,3 @@
 </script>
 </body>
 </html>
-
